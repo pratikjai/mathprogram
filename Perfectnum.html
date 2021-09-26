@@ -1,0 +1,49 @@
+<!-- Perfect number is 
+when sum of divider of number = number the this 
+number is called perfect number -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Enter Any Number:
+    <input type="number" id="a"><br>
+    Result values :
+    <input type="text" id="b"><br>
+
+    <input type ="submit" onclick="perfect()"
+     value="Check">
+
+    <script type="text/javascript">
+
+    function perfect(){
+var x=Number(document.getElementById("a").value);
+var s=0; 
+var temp=x;  
+for(var i=1; i<=parseInt(x/2); i++)
+{
+
+if (x%i==0)
+{
+    s=s+i;
+            }
+        }
+        if (s==x){
+document.getElementById("b").value=x+" Is a Perfect Number"
+        }else{
+document.getElementById("b").value=x+" Is a Not Perfect Number"
+
+        }
+    
+    }
+
+    </script>
+    
+</body>
+</html>
