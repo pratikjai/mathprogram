@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+var Number=prompt("Please enter a Number");
+var number=Number.toString();
+var len = number.length;
+var msg ="It is a Palidrome ";
+for (i=0;i<len;i++){
+   if(number[i] != number[len-1-i]) {
+msg="It is Not a Palidrome"
+    }
+}
+console.log(`${Number}: ${msg}`);
+</script>
+ 
+</body>
+</html>
