@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+
+var string=prompt("Please enter a string");
+
+var len = string.length;
+var msg ="It is a Palidrome ";
+for (i=0;i<len;i++){
+   if(string[i] != string[len-1-i]) {
+msg="It is Not a Palidrome"
+    }
+}
+console.log(`${string}: ${msg}`);
+</script>
+ 
+</body>
+</html>
+
+
+<!-- 
+    <script>
+    function Palidrome(str){
+        var len=str.length;
+    for (var i=0;i<(len/2);i++){
+        if(str[i] !=str[len-1-1]){
+            return false
+        }
+    }
+    return true
+    }
+    document.write(Palidrome("dad"));
+</script> -->
